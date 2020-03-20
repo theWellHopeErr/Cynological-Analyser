@@ -29,7 +29,8 @@ body {
   color: #ff073a;
 }
 
-.nav-link:focus {
+.nav-link:focus, .nav-link:hover {
+  color: #ff073a;
   outline: none;
 }
 

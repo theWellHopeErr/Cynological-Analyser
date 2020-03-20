@@ -1,2 +1,2 @@
 # Cynological-Analyser
-Cynological Analyzer is a web application for the classification of canine breeds using a neural networks built for cynological analysis of canine breeds with the help of an image using TensorFlow.
+Cynological Analyzer is a web application for the classification of canine breeds using a neural networks built for cynological analysis of canine breeds with the help of an image using TensorFlow. Once the breed is predicted details about the breed and description is scraped from the internet using web scrapers.

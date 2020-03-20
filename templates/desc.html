@@ -1,6 +1,7 @@
 <div class="card text-center" id="desc" style="margin: 3em;">
   <div class="card-body">
     <h3 class="card-title">{{desc["breed"]}}</h3>
+    <img src={{image_url}} style="width:30vw">
     <p class="card-text" style="padding: 10px 60px;">{{desc["desc"]}}</p>
     <ul class="list-group list-group-horizontal-xl">
       <li class="list-group-item">
@@ -30,7 +31,7 @@
       </li>
     </ul>
     <br />
-    <a href={{desc["url"]}} class="card-link">For More Info</a>
+    <a href={{desc["url"]}} class="card-link" target="_blank">For More Info</a>
 
   </div>
 </div>

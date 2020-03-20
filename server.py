@@ -12,7 +12,7 @@ labels = ["chihuahua", "japanese-spaniel", "maltese-dog", "pekinese", "shih-tzu"
 
 
 def predict_from_url():
-    image = plt.imread('img.jpg')
+    image = plt.imread('static/img/img.jpg')
     image = tf.image.resize(image, (224, 224))/255.0
     image = np.array(image)
     image = np.expand_dims(image, 0)
@@ -24,7 +24,7 @@ def predict_from_url():
 
 
 def loadImage(url):
-    urllib.request.urlretrieve(url, 'img.jpg')
+    urllib.request.urlretrieve(url, 'static/img/img.jpg')
 
 
 app = Flask(__name__)
@@ -44,7 +44,7 @@ def root():
         print("************************************************************")
         print("Site to be scraped from:", site_url)
         desc = scrapper(site_url)
-        return render_template('index.html', desc=desc)
+        return render_template('index.html', desc=desc, image_url = url )
     else:
         return render_template('index.html')
 

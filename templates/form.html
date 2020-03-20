@@ -1,0 +1,10 @@
+<form method="POST" action="/" onsubmit="loading()" id="form">
+  <label class="form-group">
+    <input placeholder="Enter Image URL here" name="url" class="form-field" type="url"
+      style=" width: 50vw; margin-right: 10px; color: #ff073a ">
+    <button type="submit" class="btn">Classify</button>
+  </label>
+  {% if isURLNotWorking %}
+  <p class="error-text">Please provide an URL</p>
+  {% endif %}
+</form>

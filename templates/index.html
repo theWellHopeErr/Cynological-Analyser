@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Cynological Analyser</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.4.1.slim.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="icon" href="{{url_for('static',filename='img/favicon.ico')}}" type="image/gif" sizes="16x16">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div style="flex-grow: 1">
+        <a class="navbar-brand" href="/"></a>
+        <img src="{{url_for('static',filename='img/paw.png')}}" class="paw">
+        <img src="{{url_for('static',filename='img/paw.png')}}" class="paw">
+        <img src="{{url_for('static',filename='img/paw.png')}}" class="paw">
+      </div>
+      <a class="nav-link my-2 my-lg-0" href="">{ Source Code }</a>
+      <a class="nav-link my-2 my-sm-0" href="">ML Model</a>
+    </nav>
+    <hr class="line">
+    <div class="info">
+      <a href="/" style="outline: none; text-decoration: none;">
+        <h1 class="display-3"></h1>
+      </a>
+      <div class="about"></div>
+      {% include "form.html" %}
+      
+      {% if desc %}
+      {% include "desc.html" %}
+      {% endif %}
+    </div>
+    <div id="loader" style="margin: 15px; display: none; text-align: center;">
+      <img src="{{url_for('static',filename='img/loading.gif')}}">
+    </div>
+
+    <script type="text/javascript">
+      function loading() {
+        $("#loader").show()
+        $("#form").hide()
+        $("#desc").hide()
+
+        window.scroll({
+          top: 2500,
+          left: 0,
+          behavior: 'smooth'
+        });
+        function scroller() {
+          var desc = document.getElementById('desc')
+          console.log('asdf');
+          desc.scrollIntoView()
+        }
+        window.onreadystatechange(scroller())
+      }
+    </script>
+  </body>
+
+</html>

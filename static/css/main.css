@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fbfbfb;
+}
+
+.navbar-brand {
+  font-family: 'Courgette', cursive;
+  font-size: xx-large;
+  color: #e90208;
+  padding: 0em 0px 0px 20px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+  text-decoration: none;
+  color: #e90208;
+  outline: none;
+}
+
+.navbar-brand::before {
+  content: "Cynological Analyser"
+}
+
+.nav-link {
+  font-size: large;
+  color: #ff073a;
+}
+
+.nav-link:focus {
+  outline: none;
+}
+
+.paw {
+  height: 3.5em;
+  width: 3em;
+}
+
+.line {
+  height: 10px;
+  margin-top: 0px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.info {
+  margin-top: 3%;
+}
+
+.display-3 {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  color: #ff073a
+}
+
+.display-3:focus {
+  outline: none;
+}
+
+.display-3::before {
+  content: "Cynological Analyser";
+}
+
+.btn {
+  height: 3.5em;
+  background-color: #ff073a;
+  color: #fbfbfb;
+  border: 1px solid;
+}
+
+.btn:hover {
+  background-color: #fbfbfb;
+  color: #ff073a;
+  border: 2px solid;
+}
+
+.about {
+  padding: 40px 100px;
+  font-size: larger;
+  text-align-last: center;
+}
+
+.about::before {
+  content: "Cynological Analyzer is a web application for the classification of canine breeds using a neural networks built for cynological analysis of canine breeds with the help of an image using TensorFlow. Once the breed is predicted details about the breed and description is scraped from the internet using web scrapers."
+}
+
+.display-4 {
+  text-align: center;
+}
+
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15vw;
+}
+
+.list-group-horizontal-xl {
+  justify-content: center;
+}
+
+.attr_icons {
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  outline: none;
+  border: 2px solid #ff073a;
+}
+
+.card-title {
+  font-family: 'Neucha', cursive;
+  font-size: xxx-large;
+  color: #ff073a;
+}
+
+.error-text {
+  font-family: sans-serif;
+  color: #ff073a;
+  text-align: center;
+}
+
+.form-group {
+  --pure-material-safari-helper1: #ff073a;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  align-items: center;
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* Input, Textarea */
+.form-field{
+  box-sizing: border-box;
+  margin: 0;
+  border: solid 1px; /* Safari */
+  border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+  border-radius: 4px;
+  padding: 15px 13px 15px;
+  width: 100%;
+  height: inherit;
+  color: #ff073a;
+  border-color: #ff073a;
+  background-color: transparent;
+  box-shadow: none; /* Firefox */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  caret-color: #ff073a;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-field:focus{
+  width: 50vw;
+  margin-right: 10px;
+  color: #ff073a;
+  outline: none;
+  border: 2px solid;
+}

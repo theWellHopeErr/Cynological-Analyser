@@ -1,0 +1,36 @@
+<div class="card text-center" id="desc" style="margin: 3em;">
+  <div class="card-body">
+    <h3 class="card-title">{{desc["breed"]}}</h3>
+    <p class="card-text" style="padding: 10px 60px;">{{desc["desc"]}}</p>
+    <ul class="list-group list-group-horizontal-xl">
+      <li class="list-group-item">
+        <h4 class="lead">Group</h4>
+        <img src="{{url_for('static',filename='img/group.png')}}" class="attr_icons">
+        {{desc["Group"]}}
+      </li>
+      <li class="list-group-item">
+        <h4 class="lead">Temperament</h4>
+        <img src="{{url_for('static',filename='img/temp.png')}}" class="attr_icons">
+        {{desc["Temperament"]}}
+      </li>
+      <li class="list-group-item">
+        <h4 class="lead">Height</h4>
+        <img src="{{url_for('static',filename='img/height.png')}}" class="attr_icons">
+        {{desc["Height"]}}
+      </li>
+      <li class="list-group-item">
+        <h4 class="lead">Weight</h4>
+        <img src="{{url_for('static',filename='img/weight.png')}}" class="attr_icons">
+        {{desc["Weight"]}}
+      </li>
+      <li class="list-group-item">
+        <h4 class="lead">Life Span</h4>
+        <img src="{{url_for('static',filename='img/lifespan.png')}}" class="attr_icons">
+        {{desc["Life Expectancy"]}}
+      </li>
+    </ul>
+    <br />
+    <a href={{desc["url"]}} class="card-link">For More Info</a>
+
+  </div>
+</div>

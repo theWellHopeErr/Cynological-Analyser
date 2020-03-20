@@ -1,5 +1,12 @@
 <div class="card text-center" id="desc" style="margin: 3em;">
   <div class="card-body">
+    {% if breed %}
+    <h3 class="card-title">{{breed}}</h3>
+    <img src={{image_url}} style="width:30vw">
+    <br/>
+    <br/>
+    <a href={{"https://en.wikipedia.org/wiki/{}".format(breed)}} class="card-link" target="_blank">For More Info</a>
+    {% else %}
     <h3 class="card-title">{{desc["breed"]}}</h3>
     <img src={{image_url}} style="width:30vw">
     <p class="card-text" style="padding: 10px 60px;">{{desc["desc"]}}</p>
@@ -32,6 +39,6 @@
     </ul>
     <br />
     <a href={{desc["url"]}} class="card-link" target="_blank">For More Info</a>
-
+    {% endif %}
   </div>
 </div>

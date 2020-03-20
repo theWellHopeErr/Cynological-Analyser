@@ -109,6 +109,7 @@ body {
 .card {
   outline: none;
   border: 2px solid #ff073a;
+  box-shadow: 2px 2px 7px 2px #ff073a;
 }
 
 .card-title {

@@ -32,9 +32,9 @@
       <a href="/" style="outline: none; text-decoration: none;">
         <h1 class="display-3"></h1>
       </a>
-      <div class="about"></div>
+      <div class="about" id="about"></div>
       {% include "form.html" %}
-      
+
       {% if desc %}
       {% include "desc.html" %}
       {% endif %}
@@ -48,19 +48,14 @@
         $("#loader").show()
         $("#form").hide()
         $("#desc").hide()
-
-        window.scroll({
-          top: 2500,
-          left: 0,
-          behavior: 'smooth'
-        });
-        function scroller() {
-          var desc = document.getElementById('desc')
-          console.log('asdf');
-          desc.scrollIntoView()
-        }
-        window.onreadystatechange(scroller())
+        var loader = document.getElementById('loader')
+        loader.scrollIntoView()
       }
+      function scroller() {
+        var desc = document.getElementById('desc')
+        desc.scrollIntoView()
+      }
+      window.onload(scroller())
     </script>
   </body>
 

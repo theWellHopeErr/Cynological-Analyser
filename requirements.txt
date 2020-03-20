@@ -77,10 +77,12 @@ soupsieve==2.0
 tensorboard==2.1.0
 tensorflow==2.1.0
 tensorflow-estimator==2.1.0
+tensorflow-hub==0.7.0
 termcolor==1.1.0
 toml==0.10.0
 typed-ast==1.4.1
 urllib3==1.25.8
+webdriver-manager==2.3.0
 Werkzeug==1.0.0
 wrapt==1.12.1
 zipp==3.1.0

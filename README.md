@@ -8,6 +8,7 @@ The Machine Learning Model is built with TensorFlow and Keras Library in Google 
 
 ### Quick Start
 Clone the Repo: ```git clone https://github.com/theWellHopeErr/Cynological-Analyser```
+
 Change Directory: ```cd Cynological-Analyser```
 
 ### Install Dependencies
@@ -15,4 +16,5 @@ Using requirements.txt: ```sudo pip install -r requirements.txt```
 
 ### Use Cynological Analyser
 Export Flask App Path: ```export FLASK_APP=server.py```
+
 Run App: ```flask run```

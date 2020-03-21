@@ -15,7 +15,7 @@ click==7.1.1
 clickclick==1.2.2
 colorama==0.4.3
 configparser==4.0.2
-connexion==2020.0.dev1
+connexion==2.6.0
 crayons==0.3.0
 cryptography==2.8
 cycler==0.10.0

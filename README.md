@@ -14,4 +14,5 @@ Change Directory: ```cd Cynological-Analyser```
 Using requirements.txt: ```sudo pip install -r requirements.txt```
 
 ### Use Cynological Analyser
-Start Server: ```python3 server.py```
+Export Flask App Path: ```export FLASK_APP=server.py```
+Run App: ```flask run```

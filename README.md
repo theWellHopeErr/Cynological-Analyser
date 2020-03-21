@@ -4,6 +4,15 @@ Cynological Analyser is a web application for the classification of canine breed
 
 The Machine Learning Model is built with TensorFlow and Keras Library in Google Colabs. The colab notebooks used for the model are included in the ```/colab-notebooks``` Directory.
 
+## Stack Used
+Machine Learning Model: `TensorFlow`, `Keras`
+
+Web Scraping: `Beautiful Soup`
+
+Front-End:  `HTML`, `CSS`, `JS`
+
+Back-End:  `Flask`
+
 ## Documentation
 
 ### Quick Start

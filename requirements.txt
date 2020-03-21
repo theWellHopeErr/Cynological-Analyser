@@ -15,7 +15,7 @@ click==7.1.1
 clickclick==1.2.2
 colorama==0.4.3
 configparser==4.0.2
-connexion==2.6.0
+connexion==2020.0.dev1
 crayons==0.3.0
 cryptography==2.8
 cycler==0.10.0
@@ -43,8 +43,9 @@ kiwisolver==1.1.0
 Markdown==3.1.1
 MarkupSafe==1.1.1
 matplotlib==3.2.1
-mkl-fft==1.0.6
-mkl-random==1.0.1.1
+mkl-fft==1.0.15
+mkl-random==1.1.0
+mkl-service==2.3.0
 numpy==1.18.1
 oauthlib==3.1.0
 openapi-spec-validator==0.2.8
@@ -53,7 +54,7 @@ pathlib2==2.3.5
 pathspec==0.7.0
 Pillow==7.0.0
 prompt-toolkit==2.0.9
-protobuf==3.11.3
+protobuf==3.11.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.7
 pycodestyle==2.5.0

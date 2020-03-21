@@ -1,2 +1,17 @@
-# Cynological-Analyser
-Cynological Analyzer is a web application for the classification of canine breeds using a neural networks built for cynological analysis of canine breeds with the help of an image using TensorFlow. Once the breed is predicted details about the breed and description is scraped from the internet using web scrapers.
+#Cynological Analyser
+
+Cynological Analyser is a web application for the classification of canine breeds using a neural networks built for cynological analysis of canine breeds with the help of an image URL using TensorFlow. Once the breed is predicted, details about the breed is scraped from the internet using web scrapers.
+
+The Machine Learning Model is built with TensorFlow and Keras Library in Google Colabs. The colab notebooks used for the model are included in the /Colab Notebooks Directory.
+
+##Documentation
+
+### Quick Start
+Clone the Repo: ```git clone https://github.com/theWellHopeErr/Cynological-Analyser```
+Change Directory: ```cd Cynological-Analyser```
+
+### Install Dependencies
+Using requirements.txt: ```sudo pip install -r requirements.txt```
+
+### Use Cynological Analyser
+Start Server: ```python3 server.py```
